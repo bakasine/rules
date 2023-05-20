@@ -1,12 +1,12 @@
 payload:
-  - DOMAIN-SUFFIX,openai.com
-  - DOMAIN-SUFFIX,pay.openai.com
-  - DOMAIN-SUFFIX,chat.openai.com
-  - DOMAIN-SUFFIX,challenges.cloudflare.com
-  - DOMAIN-SUFFIX,auth0.openai.com
-  - DOMAIN-SUFFIX,platform.openai.com
+  - '+.openai.com'
+  - '+.pay.openai.com'
+  - '+.chat.openai.com'
+  - '+.challenges.cloudflare.com'
+  - '+.auth0.openai.com'
+  - '+.platform.openai.com'
   - # Add ai.com
-  - DOMAIN-SUFFIX,ai.com
+  - '+.ai.com'
   - # Add stripe.com
-  - DOMAIN-SUFFIX,invoice.stripe.com
-  - DOMAIN-SUFFIX,stripe.com
+  - '+.invoice.stripe.com'
+  - '+.stripe.com'
