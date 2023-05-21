@@ -5,6 +5,7 @@ payload:
   - '+.challenges.cloudflare.com'
   - '+.auth0.openai.com'
   - '+.platform.openai.com'
+  - '+.auth0.com'
   - # Add ai.com
   - '+.ai.com'
   - # Add stripe.com
