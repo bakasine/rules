@@ -8,4 +8,6 @@
 "domain:njav.tv",
 "domain:avgle.com",
 "domain:pornbest.org",
+"domain:nhentai.net",
+"domain:pornhub.com",
 "domain:tasexy.com"
