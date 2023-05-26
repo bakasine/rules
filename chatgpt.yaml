@@ -1,13 +1,17 @@
-payload:
-  - '+.openai.com'
-  - '+.pay.openai.com'
-  - '+.chat.openai.com'
-  - '+.challenges.cloudflare.com'
-  - '+.auth0.openai.com'
-  - '+.platform.openai.com'
-  - '+.auth0.com'
-  - # Add ai.com
-  - '+.ai.com'
-  - # Add stripe.com
-  - '+.invoice.stripe.com'
-  - '+.stripe.com'
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,ai.com
+PROCESS-NAME,msedgewebview2.exe
+
+# CDN & API
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+
+# stripe
+DOMAIN-SUFFIX,invoice.stripe.com
+DOMAIN-SUFFIX,stripe.com
+
+# poe
+DOMAIN-SUFFIX,poe.com
