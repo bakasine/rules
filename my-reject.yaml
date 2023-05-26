@@ -1,11 +1,11 @@
 payload:
-  - '+.mousegesturesapi.com'
-  - '+.cf-se.com'
-  - '+.googleads.g.doubleclick.net'
-  - '+.adservice.google.com'
-  - '+.get.sogou.com'
-  - '+.shouji.sogou.com'
-  - '+.account.sogou.com'
-  - '+.pinyin.sogou.com'
-  - '+.ime.sogou.com'
-  - '+.macime.sogou.com'
+  - DOMAIN-SUFFIX,mousegesturesapi.com
+  - DOMAIN-SUFFIX,cf-se.com
+  - DOMAIN-SUFFIX,googleads.g.doubleclick.net
+  - DOMAIN-SUFFIX,adservice.google.com
+  - DOMAIN-SUFFIX,get.sogou.com
+  - DOMAIN-SUFFIX,shouji.sogou.com
+  - DOMAIN-SUFFIX,account.sogou.com
+  - DOMAIN-SUFFIX,pinyin.sogou.com
+  - DOMAIN-SUFFIX,ime.sogou.com
+  - DOMAIN-SUFFIX,macime.sogou.com

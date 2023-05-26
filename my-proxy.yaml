@@ -1,18 +1,18 @@
 payload:
-  - '+.binance.com'
-  - '+.githubassets.com'
-  - '+.mgnacg.com'
-  - '+.huggingface.co'
-  - '+.akkdm.com'
-  - '+.xlog.app'
-  - '+.github.com'
-  - '+.civitai.com'
-  - '+.pancakeswap.finance'
-  - '+.uniswap.org'
-  - '+.coinmarketcap.com'
-  - '+.ave.ai'
-  - '+.agemys.vip'
-  - '+.yinghuacd.com'
-  - '+.agemys.net'
-  - '+.dexscreener.com'
+  - DOMAIN-SUFFIX,binance.com
+  - DOMAIN-SUFFIX,githubassets.com
+  - DOMAIN-SUFFIX,mgnacg.com
+  - DOMAIN-SUFFIX,huggingface.co
+  - DOMAIN-SUFFIX,akkdm.com
+  - DOMAIN-SUFFIX,xlog.app
+  - DOMAIN-SUFFIX,github.com
+  - DOMAIN-SUFFIX,civitai.com
+  - DOMAIN-SUFFIX,pancakeswap.finance
+  - DOMAIN-SUFFIX,uniswap.org
+  - DOMAIN-SUFFIX,coinmarketcap.com
+  - DOMAIN-SUFFIX,ave.ai
+  - DOMAIN-SUFFIX,agemys.vip
+  - DOMAIN-SUFFIX,yinghuacd.com
+  - DOMAIN-SUFFIX,agemys.net
+  - DOMAIN-SUFFIX,dexscreener.com
   
