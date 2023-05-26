@@ -1,11 +1,11 @@
 payload:
-  - '+.0012100.xyz'
-  - '+.oracle.com'
-  - '+.oraclecloud.com'
-  - '+.211336.xyz'
-  - '+.crayfish.eu.org'
-  - '+.rotlands.eu.org'
-  - '+.uerax.eu.org'
-  - '+.bakahentailolicon.eu.org'
-  - '+.bakasine.eu.org'
-  - '+.bakasine.com'
+  - DOMAIN-SUFFIX,0012100.xyz
+  - DOMAIN-SUFFIX,oracle.com
+  - DOMAIN-SUFFIX,oraclecloud.com
+  - DOMAIN-SUFFIX,211336.xyz
+  - DOMAIN-SUFFIX,crayfish.eu.org
+  - DOMAIN-SUFFIX,rotlands.eu.org
+  - DOMAIN-SUFFIX,uerax.eu.org
+  - DOMAIN-SUFFIX,bakahentailolicon.eu.org
+  - DOMAIN-SUFFIX,bakasine.eu.org
+  - DOMAIN-SUFFIX,bakasine.com
