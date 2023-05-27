@@ -13,35 +13,35 @@ rule-providers:
   my-direct:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/bakasine/clash-rule/master/clash/my-direct.yaml"
+    url: "https://raw.githubusercontent.com/bakasine/rules/master/clash/my-direct.yaml"
     path: ./ruleset/my-direct.yaml
     interval: 86400
     
   my-proxy:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/bakasine/clash-rule/master/clash/my-proxy.yaml"
+    url: "https://raw.githubusercontent.com/bakasine/rules/master/clash/my-proxy.yaml"
     path: ./ruleset/my-proxy.yaml
     interval: 86400
     
   my-reject:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/bakasine/clash-rule/master/clash/my-reject.yaml"
+    url: "https://raw.githubusercontent.com/bakasine/rules/master/clash/my-reject.yaml"
     path: ./ruleset/my-reject.yaml
     interval: 86400
    
   ChatGPT:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/bakasine/clash-rule/master/clash/chatgpt.yaml"
+    url: "https://raw.githubusercontent.com/bakasine/rules/master/clash/chatgpt.yaml"
     path: ./ruleset/chatgpt.yaml
     interval: 86400
 
   MIUI:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/bakasine/clash-rule/master/clash/miui.yaml"
+    url: "https://raw.githubusercontent.com/bakasine/rules/master/clash/miui.yaml"
     path: ./ruleset/miui.yaml
     interval: 86400
 
@@ -59,9 +59,9 @@ rules:
 [policy]
 static=CHATGPT, YOUR_PROXY, YOUR_PROXY2
 [filter_remote]
-https://raw.githubusercontent.com/bakasine/clash-rule/master/quantumultx/direct.list, tag=my-direct, update-interval=43200, enabled=true
-https://raw.githubusercontent.com/bakasine/clash-rule/master/quantumultx/proxy.list, tag=my-proxy, update-interval=43200, enabled=true
-https://raw.githubusercontent.com/bakasine/clash-rule/master/quantumultx/reject.list, tag=my-reject, update-interval=43200, enabled=true
-https://raw.githubusercontent.com/bakasine/clash-rule/master/quantumultx/chatgpt.list, tag=chatgpt, update-interval=43200, enabled=true, force-policy=CHATGPT
+https://raw.githubusercontent.com/bakasine/rules/master/quantumultx/direct.list, tag=my-direct, update-interval=43200, enabled=true
+https://raw.githubusercontent.com/bakasine/rules/master/quantumultx/proxy.list, tag=my-proxy, update-interval=43200, enabled=true
+https://raw.githubusercontent.com/bakasine/rules/master/quantumultx/reject.list, tag=my-reject, update-interval=43200, enabled=true
+https://raw.githubusercontent.com/bakasine/rules/master/quantumultx/chatgpt.list, tag=chatgpt, update-interval=43200, enabled=true, force-policy=CHATGPT
 
 ```
