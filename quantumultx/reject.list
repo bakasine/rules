@@ -8,3 +8,5 @@ DOMAIN-SUFFIX,account.sogou.com,REJECT
 DOMAIN-SUFFIX,pinyin.sogou.com,REJECT
 DOMAIN-SUFFIX,ime.sogou.com,REJECT
 DOMAIN-SUFFIX,macime.sogou.com,REJECT
+DOMAIN-SUFFIX,o33249.ingest.sentry.io,REJECT
+DOMAIN-SUFFIX,openaicom.imgix.net,REJECT
