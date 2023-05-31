@@ -20,5 +20,7 @@
 "domain:thisav.com",
 "domain:www4.bestjavporn.com",
 "domain:7mmtv.sx",
+"domain:bilibili.com",
+"domain:bilibili.tv",
 "domain:google.com.hk"
 
