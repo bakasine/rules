@@ -25,6 +25,7 @@
     "domain:7mmtv.sx",
     "domain:bilibili.com", 
     "domain:bilibili.tv",
+    "domain:hostloc.com",
     "domain:google.com.hk"
   ],
   "outboundTag":"crayfish"
