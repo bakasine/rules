@@ -1,6 +1,15 @@
 {
   "type":"field",
   "domain":[
+    "domain:bilibili.com", 
+    "domain:bilibili.tv",
+    "domain:hostloc.com",
+    "domain:google.com.hk",
+    "domain:google.co.jp",
+    "domain:google.co.sg",
+    "domain:google.com.tw",
+    "domain:google.co.uk",
+    "domain:twitter.com",
     "domain:jable.tv",
     "domain:javmost.cx",
     "domain:cableav.tv",
@@ -18,15 +27,10 @@
     "domain:hanime.tv",
     "domain:pornhub.com",
     "domain:tasexy.com",
-    "domain:google.co.jp",
     "domain:ggjav.com",
     "domain:thisav.com",
     "domain:www4.bestjavporn.com",
-    "domain:7mmtv.sx",
-    "domain:bilibili.com", 
-    "domain:bilibili.tv",
-    "domain:hostloc.com",
-    "domain:google.com.hk"
+    "domain:7mmtv.sx"
   ],
   "outboundTag":"crayfish"
 },
