@@ -12,6 +12,7 @@
     "domain:twitter.com",
     "domain:yandex.com",
     "domain:bing.com",
+    "domain:kemono.party",
     "domain:hanime.tv",
     "domain:hanime1.me",
     "domain:animeidhentai.com",
