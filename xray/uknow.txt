@@ -15,6 +15,8 @@
     "domain:4khd.com",
     "domain:ycyweb.cloudapp.net",
     "domain:kemono.party",
+    "domain:netflav.com",
+    "domain:javlibrary.com",
     "domain:hanime.tv",
     "domain:hanime1.me",
     "domain:animeidhentai.com",
