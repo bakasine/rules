@@ -30,6 +30,7 @@
     "domain:avbro.top",
     "domain:wahas.com",
     "domain:thisav.com",
+    "domain:tasexy.com",
     "geosite:category-porn"
   ],
   "outboundTag":"crayfish"
