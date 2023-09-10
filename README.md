@@ -9,7 +9,19 @@ proxy-groups:
     proxies:
       - YOUR_PROXY
 
+  - name: "Bilibili"
+    type: select
+    proxies:
+      - YOUR_PROXY
+
 rule-providers:
+  bilibili:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/bakasine/rules/master/clash/bilibili.yaml"
+    path: ./ruleset/bilibili.yaml
+    interval: 86400 
+ 
   my-direct:
     type: http
     behavior: classical
@@ -46,6 +58,7 @@ rule-providers:
     interval: 86400
 
 rules:
+  - RULE-SET,bilibili,Bilibili
   - RULE-SET,my-direct,DIRECT
   - RULE-SET,my-proxy,PROXY
   - RULE-SET,my-reject,REJECT
