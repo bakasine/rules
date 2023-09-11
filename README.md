@@ -4,15 +4,16 @@
 
 ```
 proxy-groups:
-  - name: "CHATGPT"
-    type: select
-    proxies:
-      - YOUR_PROXY
 
-  - name: "Bilibili"
-    type: select
-    proxies:
-      - YOUR_PROXY
+- name: "CHATGPT"
+  type: select
+  proxies:
+    - YOUR_PROXY
+
+- name: "Bilibili"
+  type: select
+  proxies:
+    - YOUR_PROXY
 
 rule-providers:
   bilibili:
