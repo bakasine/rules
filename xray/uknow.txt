@@ -2,6 +2,7 @@
   "type":"field",
   "domain":[
     "domain:bilibili.com", 
+    "domain:lspgal.com", 
     "domain:bilibili.tv",
     "domain:hostloc.com",
     "domain:google.com.hk",
