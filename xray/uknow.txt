@@ -32,6 +32,7 @@
     "domain:wahas.com",
     "domain:thisav.com",
     "domain:tasexy.com",
+    "domain:miningocean.org",
     "geosite:category-porn"
   ],
   "outboundTag":"crayfish"
