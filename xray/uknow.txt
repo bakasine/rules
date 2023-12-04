@@ -1,7 +1,8 @@
 {
   "type":"field",
   "domain":[
-    "domain:bilibili.com", 
+    "domain:bilibili.com",
+    "domain:hostloc.com",
     "domain:lspgal.com", 
     "domain:bilibili.tv",
     "domain:hostloc.com",
