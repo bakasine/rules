@@ -5,6 +5,11 @@
 ```
 proxy-groups:
 
+- name: "GAME"
+  type: select
+  proxies:
+    - YOUR_PROXY
+
 - name: "CHATGPT"
   type: select
   proxies:
@@ -16,6 +21,14 @@ proxy-groups:
     - YOUR_PROXY
 
 rule-providers:
+
+  game:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/bakasine/rules@master/clash/game.yaml"
+    path: ./ruleset/game.yaml
+    interval: 86400
+
   bilibili:
     type: http
     behavior: classical
