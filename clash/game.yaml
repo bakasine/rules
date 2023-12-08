@@ -1,5 +1,7 @@
 payload:
+  - PROCESS-NAME,EasyAntiCheat.exe
   - PROCESS-NAME,dota2.exe
   - PROCESS-NAME,dota2
-  - PROCESS-NAME,apex.exe
-  - PROCESS-NAME,apex
+  - PROCESS-NAME,r5apex.exe
+  - PROCESS-NAME,r5apex
+  - PROCESS-NAME,Apex Legends
