@@ -1,3 +1,5 @@
 payload:
   - PROCESS-NAME,dota2.exe
   - PROCESS-NAME,dota2
+  - PROCESS-NAME,apex.exe
+  - PROCESS-NAME,apex

@@ -79,6 +79,7 @@ rule-providers:
     interval: 86400
 
 rules:
+  - RULE-SET,game,GAME
   - RULE-SET,bilibili,Bilibili
   - RULE-SET,my-direct,DIRECT
   - RULE-SET,my-proxy,PROXY
