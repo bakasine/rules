@@ -1,7 +1,23 @@
 payload:
   - PROCESS-NAME,EasyAntiCheat.exe
+  # Dota2
   - PROCESS-NAME,dota2.exe
   - PROCESS-NAME,dota2
+  # Apex
   - PROCESS-NAME,r5apex.exe
   - PROCESS-NAME,r5apex
   - PROCESS-NAME,Apex Legends
+  # Fallguys
+  - PROCESS-NAME,FallGuys_client_game.exe
+  - PROCESS-NAME,FallGuysEACLauncher.exe
+  - PROCESS-NAME,FallGuys_client.exe
+  - PROCESS-NAME,EOSBootstrapper.exe
+  - PROCESS-NAME,crashpad_handler.exe
+  - PROCESS-NAME,RunFallGuys.exe
+  - PROCESS-NAME,UnityCrashHandler64.exe
+  - PROCESS-NAME,EasyAntiCheat_Setup.exe
+  - PROCESS-NAME,EpicOnlineServicesInstaller.exe
+  # Hearthstone
+  - PROCESS-NAME,BlizzardBrowser.exe
+  - PROCESS-NAME,Hearthstone Beta Launcher.exe
+  - PROCESS-NAME,Hearthstone.exe

@@ -26,3 +26,7 @@ payload:
   - DOMAIN-SUFFIX,lspgal.com
   - DOMAIN-SUFFIX,services.googleapis.cn
   - DOMAIN-SUFFIX,miningocean.org
+  # Battle
+  - PROCESS-NAME,BlizzardError.exe
+  - PROCESS-NAME,Battle.net.exe
+  - PROCESS-NAME,Battle.net Launcher.exe
