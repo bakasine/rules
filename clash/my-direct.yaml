@@ -11,3 +11,4 @@ payload:
   - DOMAIN-SUFFIX,yacd.haishan.me
   # steam download
   - DOMAIN-SUFFIX,steamserver.net
+  - DOMAIN-SUFFIX,download.epicgames.com
