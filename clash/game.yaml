@@ -1,12 +1,17 @@
 payload:
+  # Common
   - PROCESS-NAME,EasyAntiCheat.exe
+  - PROCESS-NAME,EasyAntiCheat_Setup.exe
+  - PROCESS-NAME,UnityCrashHandler64.exe
+  - PROCESS-NAME,UnityCrashHandler32.exe
+  - PROCESS-NAME,EasyAntiCheat_EOS_Setup.exe
+  - PROCESS-NAME,easyanticheat_eos_setup.exe
   # Dota2
   - PROCESS-NAME,dota2.exe
   - PROCESS-NAME,vconsole2.exe
   # Apex
   - PROCESS-NAME,r5apex.exe
   - PROCESS-NAME,crashmsg.exe
-  - PROCESS-NAME,EasyAntiCheat_Setup.exe
   - PROCESS-NAME,EasyAntiCheat_launcher.exe
   - PROCESS-NAME,r5apex_dx12.exe
   # Fallguys
@@ -16,8 +21,6 @@ payload:
   - PROCESS-NAME,EOSBootstrapper.exe
   - PROCESS-NAME,crashpad_handler.exe
   - PROCESS-NAME,RunFallGuys.exe
-  - PROCESS-NAME,UnityCrashHandler64.exe
-  - PROCESS-NAME,EasyAntiCheat_Setup.exe
   - PROCESS-NAME,EpicOnlineServicesInstaller.exe
   # Hearthstone
   - PROCESS-NAME,BlizzardBrowser.exe
@@ -25,7 +28,22 @@ payload:
   - PROCESS-NAME,Hearthstone.exe
   # Elden Ring
   - PROCESS-NAME,ELDEN RING Adventure Guide.exe
-  - PROCESS-NAME,UnityCrashHandler64.exe
-  - PROCESS-NAME,easyanticheat_eos_setup.exe
   - PROCESS-NAME,eldenring.exe
   - PROCESS-NAME,start_protected_game.exe
+  # Goose Goose Duck
+  - PROCESS-NAME,GGDLauncher.exe
+  - PROCESS-NAME,Goose Goose Duck.exe
+  # Among Us
+  - PROCESS-NAME,AmongUsHelper.exe
+  - PROCESS-NAME,Among Us.exe
+  - PROCESS-NAME,Among.Us.CHS.PATCH.V2.4-ALI213.exe
+  # Civilization VI
+  - PROCESS-NAME,LauncherPatcher.exe
+  - PROCESS-NAME,CivilizationVI.exe
+  - PROCESS-NAME,CivilizationVI_DX12.exe
+  - PROCESS-NAME,FiraxisBugReporter.exe
+  - PROCESS-NAME,7za.exe
+  - PROCESS-NAME,LaunchPad.exe
+  - PROCESS-NAME,QtWebEngineProcess.exe
+  - PROCESS-NAME,sendrpt.exe
+  - PROCESS-NAME,vc_redist.x64.exe
