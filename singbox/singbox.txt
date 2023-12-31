@@ -1,13 +1,13 @@
-    "rules": [
-      {
-        "geosite": "category-porn",
-        "domain": [
-        "google.com.hk",
-        "hostloc.com"
-        ],
-        "outbound": "proxy"
+      "rules": [
+        {
+          "geosite": "category-porn",
+          "domain": [
+            "google.com.hk",
+            "hostloc.com"
+          ],
+          "outbound": "proxy"
+        }
+      ],
+      "geosite": {
+        "download_detour": "proxy"
       }
-    ],
-    "geosite": {
-      "download_detour": "proxy"
-    }
