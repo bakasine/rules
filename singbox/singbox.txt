@@ -1,10 +1,9 @@
-{
-  "route": {
     "rules": [
       {
-        "rule_set": "category-porn",
+        "rule_set": "porn",
         "domain": [
           "hostloc.com",
+          "lspgal.com",
           "google.com.hk"
         ],
         "outbound": "proxy"
@@ -12,17 +11,10 @@
     ],
     "rule_set": [
       {
-        "tag": "category-porn",
+        "tag": "porn",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-porn.srs",
         "download_detour": "proxy"
       }
     ]
-  },
-  "experimental": {
-    "cache_file": {
-      "enabled": true
-    }
-  }
-},
