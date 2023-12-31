@@ -1,20 +1,13 @@
     "rules": [
       {
-        "rule_set": "porn",
+        "geosite": "category-porn",
         "domain": [
-          "hostloc.com",
-          "lspgal.com",
-          "google.com.hk"
+        "google.com.hk",
+        "hostloc.com"
         ],
         "outbound": "proxy"
       }
     ],
-    "rule_set": [
-      {
-        "tag": "porn",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-porn.srs",
-        "download_detour": "proxy"
-      }
-    ]
+    "geosite": {
+      "download_detour": "proxy"
+    }
