@@ -18,7 +18,6 @@ payload:
   - PROCESS-NAME,VBoxTestOGL.exe
   - PROCESS-NAME,VBoxWebSrv.exe
   - PROCESS-NAME,VirtualBox.exe
-  - PROCESS-NAME,VBoxManage.exe
   # Battle
   - PROCESS-NAME,BlizzardError.exe
   - PROCESS-NAME,Battle.net.exe
