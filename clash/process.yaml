@@ -1,0 +1,25 @@
+payload:
+  # Virtual Box
+  - PROCESS-NAME,VirtualBoxVM.exe
+  - PROCESS-NAME,os2_util.exe
+  - PROCESS-NAME,vbox-img.exe
+  - PROCESS-NAME,VBoxAudioTest.exe
+  - PROCESS-NAME,VBoxAutostartSvc.exe
+  - PROCESS-NAME,VBoxBalloonCtrl.exe
+  - PROCESS-NAME,VBoxBugReport.exe
+  - PROCESS-NAME,VBoxDTrace.exe
+  - PROCESS-NAME,VBoxExtPackHelperApp.exe
+  - PROCESS-NAME,VBoxHeadless.exe
+  - PROCESS-NAME,VBoxManage.exe
+  - PROCESS-NAME,VBoxNetDHCP.exe
+  - PROCESS-NAME,VBoxNetNAT.exe
+  - PROCESS-NAME,VBoxSDS.exe
+  - PROCESS-NAME,VBoxSVC.exe
+  - PROCESS-NAME,VBoxTestOGL.exe
+  - PROCESS-NAME,VBoxWebSrv.exe
+  - PROCESS-NAME,VirtualBox.exe
+  - PROCESS-NAME,VBoxManage.exe
+  # Battle
+  - PROCESS-NAME,BlizzardError.exe
+  - PROCESS-NAME,Battle.net.exe
+  - PROCESS-NAME,Battle.net Launcher.exe

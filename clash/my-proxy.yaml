@@ -27,7 +27,3 @@ payload:
   - DOMAIN-SUFFIX,services.googleapis.cn
   - DOMAIN-SUFFIX,miningocean.org
   - DOMAIN-SUFFIX,yingwangtech.net
-  # Battle
-  - PROCESS-NAME,BlizzardError.exe
-  - PROCESS-NAME,Battle.net.exe
-  - PROCESS-NAME,Battle.net Launcher.exe

@@ -29,6 +29,13 @@ rule-providers:
     path: ./ruleset/game.yaml
     interval: 86400
 
+  process:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/bakasine/rules@master/clash/process.yaml"
+    path: ./ruleset/process.yaml
+    interval: 86400
+
   bilibili:
     type: http
     behavior: classical
@@ -83,6 +90,7 @@ rules:
   - RULE-SET,bilibili,Bilibili
   - RULE-SET,my-direct,DIRECT
   - RULE-SET,my-proxy,PROXY
+  - RULE-SET,process,PROXY
   - RULE-SET,my-reject,REJECT
   - RULE-SET,ChatGPT,CHATGPT
   - RULE-SET,MIUI,REJECT
