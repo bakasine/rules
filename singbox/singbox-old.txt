@@ -1,8 +1,8 @@
       "rules": [
         {
           "geosite": "category-porn",
-          "domain_keyword": [
-            "google.com.hk",
+          "domain": [
+            "www.google.com.hk",
             "hostloc.com"
           ],
           "outbound": "proxy"

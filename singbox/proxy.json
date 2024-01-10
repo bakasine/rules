@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain": [
+              "hostloc.com",
+              "lspgal.com",
+              "www.google.com.hk"
+            ]
+        }
+    ]
+}

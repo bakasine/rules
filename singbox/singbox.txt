@@ -1,10 +1,10 @@
       "rules": [
         {
           "rule_set": "porn",
-          "domain_keyword": [
+          "domain": [
             "hostloc.com",
             "lspgal.com",
-            "google.com.hk"
+            "www.google.com.hk"
           ],
           "outbound": "proxy"
         }
