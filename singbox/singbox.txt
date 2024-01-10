@@ -1,15 +1,20 @@
       "rules": [
         {
-          "rule_set": "porn",
-          "domain": [
-            "hostloc.com",
-            "lspgal.com",
-            "www.google.com.hk"
+          "rule_set": [
+            "my-proxy",
+            "porn"
           ],
           "outbound": "proxy"
         }
       ],
       "rule_set": [
+        {
+          "tag": "my-proxy",
+          "type": "remote",
+          "format": "source",
+          "url": "https://raw.githubusercontent.com/bakasine/rules/master/singbox/proxy.json",
+          "download_detour": "proxy"
+        },
         {
           "tag": "porn",
           "type": "remote",
