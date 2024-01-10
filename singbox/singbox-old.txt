@@ -1,7 +1,7 @@
       "rules": [
         {
           "geosite": "category-porn",
-          "domain": [
+          "domain_keyword": [
             "google.com.hk",
             "hostloc.com"
           ],

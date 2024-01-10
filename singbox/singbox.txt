@@ -1,7 +1,7 @@
       "rules": [
         {
           "rule_set": "porn",
-          "domain": [
+          "domain_keyword": [
             "hostloc.com",
             "lspgal.com",
             "google.com.hk"
