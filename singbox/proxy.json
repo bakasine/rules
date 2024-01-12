@@ -4,8 +4,11 @@
         {
             "domain": [
               "hostloc.com",
-              "lspgal.com",
-              "www.google.com.hk"
+              "lspgal.com"
+            ],
+            "domain_suffix": [
+              ".hk",
+              ".jp"
             ]
         }
     ]

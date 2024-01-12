@@ -2,7 +2,6 @@
         {
           "geosite": "category-porn",
           "domain": [
-            "www.google.com.hk",
             "hostloc.com"
           ],
           "outbound": "proxy"
