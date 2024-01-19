@@ -47,3 +47,9 @@ payload:
   - PROCESS-NAME,QtWebEngineProcess.exe
   - PROCESS-NAME,sendrpt.exe
   - PROCESS-NAME,vc_redist.x64.exe
+  # Palworld
+  - PROCESS-NAME,CrashReportClient.exe
+  - PROCESS-NAME,EpicWebHelper.exe
+  - PROCESS-NAME,Palworld-Win64-Shipping.exe
+  - PROCESS-NAME,Palworld.exe
+  - PROCESS-NAME,PalServer.exe
