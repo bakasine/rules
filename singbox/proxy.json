@@ -1,15 +1,14 @@
 {
-    "version": 1,
-    "rules": [
-        {
-            "domain": [
-              "hostloc.com",
-              "lspgal.com"
-            ],
-            "domain_suffix": [
-              ".hk",
-              ".jp"
-            ]
-        }
-    ]
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "lspgal.com"
+      ],
+      "domain_suffix": [
+        ".hk",
+        ".jp"
+      ]
+    }
+  ]
 }
