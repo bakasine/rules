@@ -53,3 +53,5 @@ payload:
   - PROCESS-NAME,Palworld-Win64-Shipping.exe
   - PROCESS-NAME,Palworld.exe
   - PROCESS-NAME,PalServer.exe
+  # Granblue Fantasy: Relink
+  - PROCESS-NAME,granblue_fantasy_relink.exe
