@@ -4,3 +4,5 @@ payload:
   - DOMAIN-SUFFIX,tradeogre.com
   - DOMAIN-SUFFIX,coingecko.com
   - DOMAIN-SUFFIX,safe.trade
+  - DOMAIN-SUFFIX,rplant.xyz
+  - DOMAIN-SUFFIX,miningpoolstats.stream
