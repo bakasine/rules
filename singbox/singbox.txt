@@ -1,7 +1,7 @@
       "rules": [
         {
           "rule_set": [
-            "my-proxy",
+            "diy",
             "porn"
           ],
           "outbound": "proxy"
@@ -9,7 +9,7 @@
       ],
       "rule_set": [
         {
-          "tag": "my-proxy",
+          "tag": "diy",
           "type": "remote",
           "format": "source",
           "url": "https://raw.githubusercontent.com/bakasine/rules/master/singbox/proxy.json",
