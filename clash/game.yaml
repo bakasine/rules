@@ -57,3 +57,11 @@ payload:
   - PROCESS-NAME,granblue_fantasy_relink.exe
   # MONSTER HUNTER WORLD
   - PROCESS-NAME,MonsterHunterWorld.exe
+  # Dark and Darker
+  - PROCESS-NAME,DungeonCrawler.exe
+  - PROCESS-NAME,crashpad_handler.exe
+  - PROCESS-NAME,CrashReportClient.exe
+  - PROCESS-NAME,DungeonCrawler.exe
+  - PROCESS-NAME,Tavern.exe
+  - PROCESS-NAME,TavernWorker Uninstaller.exe
+  - PROCESS-NAME,TavernWorker.exe
