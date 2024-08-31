@@ -5,7 +5,6 @@ payload:
   - PROCESS-NAME,UnityCrashHandler64.exe
   - PROCESS-NAME,UnityCrashHandler32.exe
   - PROCESS-NAME,EasyAntiCheat_EOS_Setup.exe
-  - PROCESS-NAME,easyanticheat_eos_setup.exe
   # Dota2
   - PROCESS-NAME,dota2.exe
   - PROCESS-NAME,vconsole2.exe
