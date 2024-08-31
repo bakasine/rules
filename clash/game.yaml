@@ -57,7 +57,6 @@ payload:
   # MONSTER HUNTER WORLD
   - PROCESS-NAME,MonsterHunterWorld.exe
   # Dark and Darker
-  - PROCESS-NAME,DungeonCrawler.exe
   - PROCESS-NAME,crashpad_handler.exe
   - PROCESS-NAME,CrashReportClient.exe
   - PROCESS-NAME,DungeonCrawler.exe
