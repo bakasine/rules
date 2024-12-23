@@ -1,8 +1,4 @@
 payload:
-  - DOMAIN-SUFFIX,crayfish.eu.org
-  - DOMAIN-SUFFIX,rotlands.eu.org
-  - DOMAIN-SUFFIX,uerax.eu.org
-  - DOMAIN-SUFFIX,bakahentailolicon.eu.org
   - DOMAIN-SUFFIX,clash.razord.top
   - DOMAIN-SUFFIX,yacd.haishan.me
   # steam download
