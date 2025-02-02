@@ -32,3 +32,5 @@ payload:
   - DOMAIN-SUFFIX,okx.com
   - DOMAIN-SUFFIX,gate.io
   - DOMAIN-SUFFIX,gateio
+  - DOMAIN-SUFFIX,deepseek.com
+  - DOMAIN-SUFFIX,volces.com
