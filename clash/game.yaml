@@ -5,6 +5,9 @@ payload:
   - PROCESS-NAME,UnityCrashHandler64.exe
   - PROCESS-NAME,UnityCrashHandler32.exe
   - PROCESS-NAME,EasyAntiCheat_EOS_Setup.exe
+  - PROCESS-NAME,CrashReportClient.exe
+  - PROCESS-NAME,EpicWebHelper.exe
+  - PROCESS-NAME,crashpad_handler.exe
   # Dota2
   - PROCESS-NAME,dota2.exe
   - PROCESS-NAME,vconsole2.exe
@@ -18,7 +21,6 @@ payload:
   - PROCESS-NAME,FallGuysEACLauncher.exe
   - PROCESS-NAME,FallGuys_client.exe
   - PROCESS-NAME,EOSBootstrapper.exe
-  - PROCESS-NAME,crashpad_handler.exe
   - PROCESS-NAME,RunFallGuys.exe
   - PROCESS-NAME,EpicOnlineServicesInstaller.exe
   # Hearthstone
@@ -47,8 +49,6 @@ payload:
   - PROCESS-NAME,sendrpt.exe
   - PROCESS-NAME,vc_redist.x64.exe
   # Palworld
-  - PROCESS-NAME,CrashReportClient.exe
-  - PROCESS-NAME,EpicWebHelper.exe
   - PROCESS-NAME,Palworld-Win64-Shipping.exe
   - PROCESS-NAME,Palworld.exe
   - PROCESS-NAME,PalServer.exe
@@ -57,8 +57,6 @@ payload:
   # MONSTER HUNTER WORLD
   - PROCESS-NAME,MonsterHunterWorld.exe
   # Dark and Darker
-  - PROCESS-NAME,crashpad_handler.exe
-  - PROCESS-NAME,CrashReportClient.exe
   - PROCESS-NAME,DungeonCrawler.exe
   - PROCESS-NAME,Tavern.exe
   - PROCESS-NAME,TavernWorker Uninstaller.exe
