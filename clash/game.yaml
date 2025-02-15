@@ -6,13 +6,16 @@ payload:
   - PROCESS-NAME,UnityCrashHandler32.exe
   - PROCESS-NAME,EasyAntiCheat_EOS_Setup.exe
   - PROCESS-NAME,CrashReportClient.exe
+  - PROCESS-NAME,CrashReport.exe
   - PROCESS-NAME,EpicWebHelper.exe
   - PROCESS-NAME,crashpad_handler.exe
+  - PROCESS-NAME,start_protected_game.exe
   # Dota2
   - PROCESS-NAME,dota2.exe
   - PROCESS-NAME,vconsole2.exe
   # Apex
   - PROCESS-NAME,r5apex.exe
+  - PROCESS-NAME,ApexLauncher.exe
   - PROCESS-NAME,crashmsg.exe
   - PROCESS-NAME,EasyAntiCheat_launcher.exe
   - PROCESS-NAME,r5apex_dx12.exe
@@ -30,7 +33,6 @@ payload:
   # Elden Ring
   - PROCESS-NAME,ELDEN RING Adventure Guide.exe
   - PROCESS-NAME,eldenring.exe
-  - PROCESS-NAME,start_protected_game.exe
   # Goose Goose Duck
   - PROCESS-NAME,GGDLauncher.exe
   - PROCESS-NAME,Goose Goose Duck.exe
@@ -61,3 +63,6 @@ payload:
   - PROCESS-NAME,Tavern.exe
   - PROCESS-NAME,TavernWorker Uninstaller.exe
   - PROCESS-NAME,TavernWorker.exe
+  # Monster Hunter Wilds
+  - PROCESS-NAME,InstallerMessage.exe
+  - PROCESS-NAME,MonsterHunterWildsBeta.exe
