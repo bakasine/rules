@@ -66,3 +66,4 @@ payload:
   # Monster Hunter Wilds
   - PROCESS-NAME,InstallerMessage.exe
   - PROCESS-NAME,MonsterHunterWildsBeta.exe
+  - PROCESS-NAME,MonsterHunterWilds.exe
