@@ -53,12 +53,17 @@ jobs:
         # 检查 list 文件是否有变化，如果有变化则提交并推送
         # --allow-empty 避免没有修改时导致脚本报错
         run: |
-          if git diff --exit-code list; then
-            echo "list 文件没有变化，无需提交。"
+          FILE_PATH_1="clash/ai.list"
+          FILE_PATH_2="quantumultx/ai.list"
+          DIFF_1=$(git diff --exit-code -- $FILE_PATH_1 || echo 1)
+          # 检查第二个文件是否有差异 (返回码 1 表示有差异)
+          DIFF_2=$(git diff --exit-code -- $FILE_PATH_2 || echo 1)
+          if [ "$DIFF_1" = "1" ] || [ "$DIFF_2" = "1" ]; then
+            echo "文件没有变动，跳过提交"
           else
-            echo "list 文件已更新，正在提交..."
-            git add list
+            echo "文件已更新，正在提交..."
+            git add $FILE_PATH_1 $FILE_PATH_2
             git commit -m " chore(list): Auto update AI list [skip ci] "
             git push
-            echo "list 文件更新并推送完成。"
+            echo "文件更新并推送完成。"
           fi
