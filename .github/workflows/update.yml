@@ -1,0 +1,64 @@
+name: 自动合并并更新 List 文件
+
+on:
+  # 每天运行一次的定时任务，设置为 UTC 时间 08:00（大约北京时间下午 4 点）
+  schedule:
+    - cron: '0 8 * * *'
+  # 也可以手动触发
+  workflow_dispatch:
+
+jobs:
+  update-list:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ 检出你的项目代码
+        # 使用 actions/checkout@v4 来获取你的项目代码
+        uses: actions/checkout@v4
+
+      - name: 📥 下载 Alist 和 Blist 文件
+        run: |
+          echo "下载 Gemini 文件..."
+          curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list -o Gemini.list
+          curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/QuantumultX/Gemini/Gemini.list -o Gemini_qx.list
+
+          echo "下载 OpenAI 文件..."
+          curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list -o OpenAI.list
+          curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/QuantumultX/OpenAI/OpenAI.list -o OpenAI_qx.list
+
+          echo "下载 Claude 文件..."
+          curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list -o Claude.list
+          curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/QuantumultX/Claude/Claude.list -o Claude_qx.list
+
+
+      - name: 📝 合并文件
+        run: |
+          echo "正在合并文件..."
+          cat Gemini.list > clash/ai.list
+          cat OpenAI.list >> clash/ai.list
+          cat Claude.list >> clash/ai.list
+
+          cat Gemini_qx.list > quantumultx/ai.list
+          cat OpenAI_qx.list >> quantumultx/ai.list
+          cat Claude_qx.list >> quantumultx/ai.list
+          
+
+      - name: 📦 配置 Git 用户信息
+        # 这一步是让 Action 能够以正确的身份提交代码
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: 📤 检查并提交更新
+        # 检查 list 文件是否有变化，如果有变化则提交并推送
+        # --allow-empty 避免没有修改时导致脚本报错
+        run: |
+          if git diff --exit-code list; then
+            echo "list 文件没有变化，无需提交。"
+          else
+            echo "list 文件已更新，正在提交..."
+            git add list
+            git commit -m " chore(list): Auto update AI list [skip ci] "
+            git push
+            echo "list 文件更新并推送完成。"
+          fi
