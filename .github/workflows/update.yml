@@ -10,7 +10,8 @@ on:
 jobs:
   update-list:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write # 授予写入权限
     steps:
       - name: ⬇️ 检出你的项目代码
         # 使用 actions/checkout@v4 来获取你的项目代码
