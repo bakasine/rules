@@ -44,6 +44,11 @@ jobs:
           cat Claude_qx.list >> quantumultx/ai.list
           
 
+      - name: 🗑️ 删除文件
+        run: |
+          echo "正在删除临时文件..."
+          rm Gemini.list OpenAI.list Claude.list Gemini_qx.list OpenAI_qx.list Claude_qx.list
+
       - name: 📦 配置 Git 用户信息
         # 这一步是让 Action 能够以正确的身份提交代码
         run: |
