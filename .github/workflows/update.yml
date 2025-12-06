@@ -61,10 +61,7 @@ jobs:
         run: |
           FILE_PATH_1="clash/ai.list"
           FILE_PATH_2="quantumultx/ai.list"
-          DIFF_1=$(git diff --exit-code -- $FILE_PATH_1 || echo 1)
-          # 检查第二个文件是否有差异 (返回码 1 表示有差异)
-          DIFF_2=$(git diff --exit-code -- $FILE_PATH_2 || echo 1)
-          if [ "$DIFF_1" = "1" ] || [ "$DIFF_2" = "1" ]; then
+          if ! git diff --exit-code -- $FILE_PATH_1 $FILE_PATH_2; then
             echo "文件没有变动，跳过提交"
           else
             echo "文件已更新，正在提交..."
