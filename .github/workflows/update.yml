@@ -61,7 +61,7 @@ jobs:
         run: |
           FILE_PATH_1="clash/ai.list"
           FILE_PATH_2="quantumultx/ai.list"
-          if ! git diff --exit-code -- $FILE_PATH_1 $FILE_PATH_2; then
+          if [ -z "$(git status --porcelain)" ]; then
             echo "文件没有变动，跳过提交"
           else
             echo "文件已更新，正在提交..."
