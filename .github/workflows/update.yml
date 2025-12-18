@@ -57,7 +57,6 @@ jobs:
           echo "合并 Web3 规则..."
           if [ -s "Web3.list" ]; then
             cat "Web3.list" >> clash/crypto.list
-            sed -i 's/^DOMAIN/HOST/g' Web3.list
             cat "Web3.list" >> quantumultx/crypto.list
           else
             echo "⚠️ Web3.list 为空或不存在，跳过"
