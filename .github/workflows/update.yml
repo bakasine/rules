@@ -17,7 +17,7 @@ jobs:
         # 使用 actions/checkout@v4 来获取你的项目代码
         uses: actions/checkout@v4
 
-      - name: 📥 下载 Alist 和 Blist 文件
+      - name: 📥 下载文件
         run: |
           echo "下载 Gemini 文件..."
           curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list -o Gemini.list
@@ -31,18 +31,39 @@ jobs:
           curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list -o Claude.list
           curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/QuantumultX/Claude/Claude.list -o Claude_qx.list
 
+          echo "下载 Web3 文件..."
+          curl -sS https://raw.githubusercontent.com/enriquephl/QuantumultX_config/refs/heads/main/ClashRuleSet/Clash/Web3.list -o Web3.list
 
       - name: 📝 合并文件
         run: |
-          echo "正在合并文件..."
-          cat Gemini.list > clash/ai.list
-          cat OpenAI.list >> clash/ai.list
-          cat Claude.list >> clash/ai.list
+          echo "正在合并 Clash 规则..."
+          for f in Gemini.list OpenAI.list Claude.list; do
+            if [ -s "$f" ]; then
+              cat "$f" >> clash/ai.list
+            else
+              echo "⚠️ $f 为空或不存在，跳过"
+            fi
+          done
 
-          cat Gemini_qx.list > quantumultx/ai.list
-          cat OpenAI_qx.list >> quantumultx/ai.list
-          cat Claude_qx.list >> quantumultx/ai.list
-          
+          echo "合并 QuantumultX 规则..."
+          for f in Gemini_qx.list OpenAI_qx.list Claude_qx.list; do
+            if [ -s "$f" ]; then
+              cat "$f" >> quantumultx/ai.list
+            else
+              echo "⚠️ $f 为空或不存在，跳过"
+            fi
+          done
+
+          echo "合并 Web3 规则..."
+          if [ -s "Web3.list" ]; then
+            cat "Web3.list" >> clash/crypto.list
+            sed -i 's/^DOMAIN/HOST/g' Web3.list
+            cat "Web3.list" >> quantumultx/crypto.list
+          else
+            echo "⚠️ Web3.list 为空或不存在，跳过"
+          fi
+
+
 
       - name: 📦 配置 Git 用户信息
         # 这一步是让 Action 能够以正确的身份提交代码
@@ -54,17 +75,19 @@ jobs:
         # 检查 list 文件是否有变化，如果有变化则提交并推送
         # --allow-empty 避免没有修改时导致脚本报错
         run: |
-          FILE_PATH_1="clash/ai.list"
-          FILE_PATH_2="quantumultx/ai.list"
-          DIFF_1=$(git diff --exit-code -- $FILE_PATH_1 || echo 1)
-          # 检查第二个文件是否有差异 (返回码 1 表示有差异)
-          DIFF_2=$(git diff --exit-code -- $FILE_PATH_2 || echo 1)
-          if [ "$DIFF_1" = "1" ] || [ "$DIFF_2" = "1" ]; then
+          FILES=(
+            clash/ai.list
+            clash/crypto.list
+            quantumultx/ai.list
+            quantumultx/crypto.list
+          )
+
+          if git diff --quiet -- "${FILES[@]}"; then
             echo "文件没有变动，跳过提交"
           else
             echo "文件已更新，正在提交..."
-            git add $FILE_PATH_1 $FILE_PATH_2
-            git commit -m " chore(list): Auto update AI list [skip ci] "
+            git add "${FILES[@]}"
+            git commit -m "chore(list): Auto update list [skip ci]"
             git push
             echo "文件更新并推送完成。"
           fi

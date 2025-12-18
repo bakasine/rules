@@ -1,4 +1,5 @@
-DOMAIN-SUFFIX,clash.razord.top,DIRECT
-DOMAIN-SUFFIX,yacd.haishan.me,DIRECT
-DOMAIN-SUFFIX,cn.uerax.eu.org,DIRECT
-DOMAIN-SUFFIX,gz.uerax.eu.org,DIRECT
+HOST-SUFFIX,clash.razord.top,DIRECT
+HOST-SUFFIX,yacd.haishan.me,DIRECT
+HOST-SUFFIX,cn.uerax.eu.org,DIRECT
+HOST-SUFFIX,gz.uerax.eu.org,DIRECT
+HOST-SUFFIX,maj-soul.com,DIRECT

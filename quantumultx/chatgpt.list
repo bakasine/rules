@@ -30,4 +30,4 @@ HOST-SUFFIX,sentry.io,OpenAI
 HOST-SUFFIX,stripe.com,OpenAI
 HOST-SUFFIX,turn.livekit.cloud,OpenAI
 HOST-KEYWORD,openai,OpenAI
-DOMAIN-SUFFIX,poe.com,OpenAI
+HOST-SUFFIX,poe.com,OpenAI
