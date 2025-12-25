@@ -37,6 +37,8 @@ jobs:
       - name: 📝 合并文件
         run: |
           echo "正在合并 Clash 规则..."
+          TMP="clash_ai.tmp"
+          TMP_QX="qx_ai.tmp"
           : > "$TMP"
 
           [ -s "Gemini.list" ] && cat "Gemini.list" >> "$TMP" && echo "" >> "$TMP"
