@@ -37,22 +37,31 @@ jobs:
       - name: 📝 合并文件
         run: |
           echo "正在合并 Clash 规则..."
-          for f in Gemini.list OpenAI.list Claude.list; do
-            if [ -s "$f" ]; then
-              cat "$f" > clash/ai.list
-            else
-              echo "⚠️ $f 为空或不存在，跳过"
-            fi
-          done
+          : > "$TMP"
+
+          [ -s "Gemini.list" ] && cat "Gemini.list" >> "$TMP" && echo "" >> "$TMP"
+          [ -s "OpenAI.list" ] && cat "OpenAI.list" >> "$TMP" && echo "" >> "$TMP"
+          [ -s "Claude.list" ] && cat "Claude.list" >> "$TMP" && echo "" >> "$TMP"
+
+          if [ -s "$TMP" ]; then
+            mv "$TMP" clash/ai.list
+          else
+            rm -f "$TMP"
+          fi
+
 
           echo "合并 QuantumultX 规则..."
-          for f in Gemini_qx.list OpenAI_qx.list Claude_qx.list; do
-            if [ -s "$f" ]; then
-              cat "$f" > quantumultx/ai.list
-            else
-              echo "⚠️ $f 为空或不存在，跳过"
-            fi
-          done
+          : > "$TMP_QX"
+
+          [ -s "Gemini_qx.list" ] && cat "Gemini_qx.list" >> "$TMP_QX" && echo "" >> "$TMP_QX"
+          [ -s "OpenAI_qx.list" ] && cat "OpenAI_qx.list" >> "$TMP_QX" && echo "" >> "$TMP_QX"
+          [ -s "Claude_qx.list" ] && cat "Claude_qx.list" >> "$TMP_QX" && echo "" >> "$TMP_QX"
+
+          if [ -s "$TMP_QX" ]; then
+            mv "$TMP_QX" quantumultx/ai.list
+          else
+            rm -f "$TMP_QX"
+          fi
 
           echo "合并 Web3 规则..."
           if [ -s "Web3.list" ]; then
