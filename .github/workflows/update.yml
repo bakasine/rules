@@ -23,6 +23,10 @@ jobs:
           curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list -o Gemini.list
           curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/QuantumultX/Gemini/Gemini.list -o Gemini_qx.list
 
+          echo "下载 Copilot 文件..."
+          curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Copilot/Copilot.list -o Copilot.list
+          curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/QuantumultX/Copilot/Copilot.list -o Copilot_qx.list
+
           echo "下载 OpenAI 文件..."
           curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list -o OpenAI.list
           curl -sS https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/QuantumultX/OpenAI/OpenAI.list -o OpenAI_qx.list
@@ -39,11 +43,16 @@ jobs:
           echo "正在合并 Clash 规则..."
           TMP="clash_ai.tmp"
           TMP_QX="qx_ai.tmp"
+
+          sed -i '/www\.bing\.com/d' Copilot.list
+          sed -i '/www\.bing\.com/d' Copilot_qx.list
+
           : > "$TMP"
 
           [ -s "Gemini.list" ] && cat "Gemini.list" >> "$TMP" && echo "" >> "$TMP"
           [ -s "OpenAI.list" ] && cat "OpenAI.list" >> "$TMP" && echo "" >> "$TMP"
           [ -s "Claude.list" ] && cat "Claude.list" >> "$TMP" && echo "" >> "$TMP"
+          [ -s "Gemini.list" ] && cat "Copilot.list" >> "$TMP" && echo "" >> "$TMP"
 
           if [ -s "$TMP" ]; then
             mv "$TMP" clash/ai.list
@@ -58,6 +67,7 @@ jobs:
           [ -s "Gemini_qx.list" ] && cat "Gemini_qx.list" >> "$TMP_QX" && echo "" >> "$TMP_QX"
           [ -s "OpenAI_qx.list" ] && cat "OpenAI_qx.list" >> "$TMP_QX" && echo "" >> "$TMP_QX"
           [ -s "Claude_qx.list" ] && cat "Claude_qx.list" >> "$TMP_QX" && echo "" >> "$TMP_QX"
+          [ -s "Gemini_qx.list" ] && cat "Copilot_qx.list" >> "$TMP_QX" && echo "" >> "$TMP_QX"
 
           if [ -s "$TMP_QX" ]; then
             mv "$TMP_QX" quantumultx/ai.list
