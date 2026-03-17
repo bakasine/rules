@@ -2,5 +2,9 @@ payload:
   - DOMAIN-SUFFIX,gate.ac
   - DOMAIN-SUFFIX,gate.io
   - DOMAIN-SUFFIX,gate.com
+  - DOMAIN-SUFFIX,gateio.services
+  - DOMAIN-SUFFIX,gatedata.org
+  - DOMAIN-SUFFIX,gateio.live
+  - DOMAIN-SUFFIX,gateimg.com
   - DOMAIN-SUFFIX,mexc.com
   - DOMAIN-KEYWORD,binance
