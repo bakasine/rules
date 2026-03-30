@@ -1,4 +1,5 @@
 payload:
+  # gate
   - DOMAIN-SUFFIX,gate.ac
   - DOMAIN-SUFFIX,gate.io
   - DOMAIN-SUFFIX,gate.com
@@ -6,5 +7,62 @@ payload:
   - DOMAIN-SUFFIX,gatedata.org
   - DOMAIN-SUFFIX,gateio.live
   - DOMAIN-SUFFIX,gateimg.com
+  # mexc
   - DOMAIN-SUFFIX,mexc.com
+  # binance
+  - DOMAIN-SUFFIX,binance.cc
+  - DOMAIN-SUFFIX,binance.cloud
+  - DOMAIN-SUFFIX,binance.com
+  - DOMAIN-SUFFIX,binance.im
+  - DOMAIN-SUFFIX,binance.me
+  - DOMAIN-SUFFIX,binance.us
+  - DOMAIN-SUFFIX,bnappzh.co
+  - DOMAIN-SUFFIX,bnappzh.com
+  - DOMAIN-SUFFIX,bnbstatic.com
+  - DOMAIN-SUFFIX,bntrace.com
+  - DOMAIN-SUFFIX,binance.charity
+  - DOMAIN-SUFFIX,binance.co
+  - DOMAIN-SUFFIX,binance.info
+  - DOMAIN-SUFFIX,binance.net
+  - DOMAIN-SUFFIX,binance.org
+  - DOMAIN-SUFFIX,binance.vision
+  - DOMAIN-SUFFIX,binanceapi.com
+  - DOMAIN-SUFFIX,binancezh.be
+  - DOMAIN-SUFFIX,binancezh.biz
+  - DOMAIN-SUFFIX,binancezh.cc
+  - DOMAIN-SUFFIX,binancezh.co
+  - DOMAIN-SUFFIX,binancezh.com
+  - DOMAIN-SUFFIX,binancezh.info
+  - DOMAIN-SUFFIX,binancezh.ink
+  - DOMAIN-SUFFIX,binancezh.kim
+  - DOMAIN-SUFFIX,binancezh.link
+  - DOMAIN-SUFFIX,binancezh.live
+  - DOMAIN-SUFFIX,binancezh.mobi
+  - DOMAIN-SUFFIX,binancezh.net
+  - DOMAIN-SUFFIX,binancezh.pro
+  - DOMAIN-SUFFIX,binancezh.sh
+  - DOMAIN-SUFFIX,binancezh.top
+  - DOMAIN-SUFFIX,bnappzh.mobi
+  - DOMAIN-SUFFIX,bsc.getblock.io
+  - DOMAIN-SUFFIX,bscscan.com
+  - DOMAIN-SUFFIX,binancecnt.com
   - DOMAIN-KEYWORD,binance
+  # lbank
+  - DOMAIN-SUFFIX,lbank.zone
+  - DOMAIN-SUFFIX,lbank.com
+  - DOMAIN-KEYWORD,lbank
+  # okx
+  - DOMAIN-SUFFIX,okex.com
+  - DOMAIN-SUFFIX,okx-dns.com
+  - DOMAIN-SUFFIX,okx-dns1.com
+  - DOMAIN-SUFFIX,okx-dns2.com
+  - DOMAIN-SUFFIX,wallet.okex.org
+  - DOMAIN-KEYWORD,okx
+  #  coinone
+  - DOMAIN-SUFFIX,coinone.co.kr
+  - DOMAIN-SUFFIX,coinonecore.com
+  - DOMAIN-SUFFIX,coinonecorp.com
+#  Metamask
+  - DOMAIN-KEYWORD,metamask
+  - DOMAIN,token-api.metaswap.codefi.network
+  - DOMAIN,min-api.cryptocompare.com
