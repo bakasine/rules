@@ -19,6 +19,7 @@ payload:
   - 'ff00::/8'
   - DOMAIN-SUFFIX,clash.razord.top
   - DOMAIN-SUFFIX,yacd.haishan.me
+  - DOMAIN-SUFFIX,dl.fuckingfast.co
   # steam download
   - DOMAIN-SUFFIX,steamserver.net
   - DOMAIN-SUFFIX,download.epicgames.com
