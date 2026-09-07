@@ -28,3 +28,20 @@ payload:
   - DOMAIN-SUFFIX,gz.uerax.eu.org
   - DOMAIN-SUFFIX,cn.rotlands.eu.org
   - DOMAIN-SUFFIX,gz.rotlands.eu.org
+  # lzizy cdn
+  - DOMAIN-SUFFIX,lzizy.net,DIRECT
+  - DOMAIN-SUFFIX,lzizy.com,DIRECT
+  - DOMAIN-SUFFIX,lziapi.com,DIRECT
+  - DOMAIN-SUFFIX,lziplayer.com,DIRECT
+  - DOMAIN-SUFFIX,lzipic.com,DIRECT
+  - DOMAIN-SUFFIX,lzzyimg.com,DIRECT
+  - DOMAIN-SUFFIX,viptulz.com,DIRECT
+  - DOMAIN-SUFFIX,lzzy.tv,DIRECT
+  - DOMAIN-SUFFIX,alzcname.com,DIRECT
+  - DOMAIN-SUFFIX,ivipcdn.com,DIRECT
+  - DOMAIN-REGEX,^.*(cdnlz|lzcdn|lz-cdn|lzv|lzi)\d*.*\.com$,DIRECT
+  - DOMAIN-SUFFIX,lfthirtytwo.com,DIRECT
+  - DOMAIN-SUFFIX,ryplay17.com,DIRECT
+  - DOMAIN-KEYWORD,lz-cdn,DIRECT
+  - DOMAIN-KEYWORD,cdnlz,DIRECT
+  - DOMAIN-KEYWORD,lzcdn,DIRECT
