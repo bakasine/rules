@@ -20,6 +20,9 @@ payload:
   - DOMAIN-SUFFIX,clash.razord.top
   - DOMAIN-SUFFIX,yacd.haishan.me
   - DOMAIN-SUFFIX,cycstream.com
+  - DOMAIN-SUFFIX,girigirilove.com
+  - DOMAIN-SUFFIX,akamaized.net
+  - DOMAIN-SUFFIX,xfvod.pro
   # steam download
   - DOMAIN-SUFFIX,steamserver.net
   - DOMAIN-SUFFIX,download.epicgames.com
