@@ -23,6 +23,7 @@ payload:
   - DOMAIN-SUFFIX,girigirilove.com
   - DOMAIN-SUFFIX,akamaized.net
   - DOMAIN-SUFFIX,xfvod.pro
+  - DOMAIN-SUFFIX,sorani-vids.xyz
   # steam download
   - DOMAIN-SUFFIX,steamserver.net
   - DOMAIN-SUFFIX,download.epicgames.com
