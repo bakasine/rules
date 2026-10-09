@@ -25,6 +25,7 @@ payload:
   - DOMAIN-SUFFIX,akamaized.net
   - DOMAIN-SUFFIX,xfvod.pro
   - DOMAIN-SUFFIX,sorani-vids.xyz
+  - DOMAIN-KEYWORD,sorani
   - DOMAIN-SUFFIX,adkwai.com
   - DOMAIN-SUFFIX,ffzy-plays.com
   - DOMAIN-SUFFIX,dytt-tvs.com
