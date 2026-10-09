@@ -19,11 +19,18 @@ payload:
   - 'ff00::/8'
   - DOMAIN-SUFFIX,clash.razord.top
   - DOMAIN-SUFFIX,yacd.haishan.me
+  # anime
   - DOMAIN-SUFFIX,cycstream.com
   - DOMAIN-SUFFIX,girigirilove.com
   - DOMAIN-SUFFIX,akamaized.net
   - DOMAIN-SUFFIX,xfvod.pro
   - DOMAIN-SUFFIX,sorani-vids.xyz
+  - DOMAIN-SUFFIX,adkwai.com
+  - DOMAIN-SUFFIX,ffzy-plays.com
+  - DOMAIN-SUFFIX,dytt-tvs.com
+  - DOMAIN-SUFFIX,playxf.top
+  - DOMAIN-SUFFIX,moedot.net
+  - DOMAIN-KEYWORD,vvvip-plays
   # steam download
   - DOMAIN-SUFFIX,steamserver.net
   - DOMAIN-SUFFIX,download.epicgames.com
