@@ -6,17 +6,6 @@ HOST-SUFFIX,cn.rotlands.eu.org,DIRECT
 HOST-SUFFIX,gz.rotlands.eu.org,DIRECT
 HOST-SUFFIX,maj-soul.com,DIRECT
 HOST-SUFFIX,dl.fuckingfast.co,DIRECT
-# anime 
-HOST-SUFFIX,akamaized.net,DIRECT
-HOST-SUFFIX,sorani-vids.xyz,DIRECT
-HOST-KEYWORD,sorani,DIRECT
-HOST-SUFFIX,adkwai.com,DIRECT
-HOST-SUFFIX,ffzy-plays.com,DIRECT
-HOST-SUFFIX,xfvod.pro,DIRECT
-HOST-SUFFIX,dytt-tvs.com,DIRECT
-HOST-SUFFIX,playxf.top,DIRECT
-HOST-SUFFIX,moedot.net,DIRECT
-HOST-KEYWORD,vvvip-plays,DIRECT
 # lzizy cdn
 HOST-SUFFIX,lzizy.net,DIRECT
 HOST-SUFFIX,lzizy.com,DIRECT
