@@ -67,3 +67,5 @@ payload:
   - PROCESS-NAME,InstallerMessage.exe
   - PROCESS-NAME,MonsterHunterWildsBeta.exe
   - PROCESS-NAME,MonsterHunterWilds.exe
+  # RUBRUN
+  - PROCESS-NAME,ROB RUN.exe
